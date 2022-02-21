@@ -204,6 +204,8 @@ class CircularStepProgressIndicator extends StatelessWidget {
                 ? constraints.maxWidth
                 : fallbackWidth,
         child: CustomPaint(
+          isComplex: true,
+          willChange: true,
           painter: _CircularIndicatorPainter(
             totalSteps: totalSteps,
             currentStep: currentStep,
